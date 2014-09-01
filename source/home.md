@@ -6,7 +6,7 @@
 
 出刊年月       epub           ipad:PDF      A4:PDF     單頁 HTM     原始碼      全部下載
 ------------   ----------     -----------   --------   -----------  ----------  -------------
-2014年8月      [epub]         [ipad.pdf]    [A4.pdf]   [pmag.html]  [code.zip]  [github]
+2014年9月      [epub]         [ipad.pdf]    [A4.pdf]   [pmag.html]  [code.zip]  [github]
 
 ### 本期內容 (焦點：從 CSS, LESS/SASS 到 Bootstrap)
 * 前言
