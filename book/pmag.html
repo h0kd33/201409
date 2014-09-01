@@ -1,0 +1,1032 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="2014 年 9 月號" />
+  <title>程式人雜誌</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="../css/pmag.css" type="text/css" />
+</head>
+<body>
+<div id="header_wrap">
+   <h1><a href="https://www.facebook.com/groups/programmerMagazine">程式人雜誌</a> <sub> --  <a href="http://programmermagazine.github.io/201409/htm/home.html">2014 年 9 月號</a> (開放公益出版品)</sub></h1>
+</div>
+<div id="content">
+<div id="header">
+<h1 class="title"><a href="https://www.facebook.com/groups/programmerMagazine/">程式人雜誌</a></h1>
+<h2 class="author">2014 年 9 月號</h2>
+<h3 class="date">本期焦點：從 CSS, LESS/SASS 到 Bootstrap</h3>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#前言">前言</a><ul>
+<li><a href="#編輯小語">編輯小語</a></li>
+<li><a href="#授權聲明">授權聲明</a></li>
+</ul></li>
+<li><a href="#本期焦點">本期焦點</a><ul>
+<li><a href="#css-網頁排版語言">CSS 網頁排版語言</a></li>
+<li><a href="#css-的變種-less-與-sass">CSS 的變種： LESS 與 SASS</a></li>
+<li><a href="#bootstrap-網頁排版框架">Bootstrap 網頁排版框架</a></li>
+</ul></li>
+<li><a href="#程式人文集">程式人文集</a><ul>
+<li><a href="#從-arduino-到-avr-晶片4----blink-with-timer-作者cooper-maa">從 Arduino 到 AVR 晶片(4) -- Blink with Timer (作者：Cooper Maa)</a></li>
+<li><a href="#verilog-的電路合成研究----以-mux-多工器為例-作者陳鍾誠">Verilog 的電路合成研究 -- 以 MUX 多工器為例 (作者：陳鍾誠)</a></li>
+<li><a href="#random-variable-of-normal-distribution-作者bridan">Random variable of normal distribution (作者：Bridan)</a></li>
+<li><a href="#visual-basic-6.0-奇數魔術方塊odd-magic-square-詳細解法-作者廖憲得-0xde">Visual Basic 6.0: 奇數魔術方塊(Odd Magic Square) 詳細解法 (作者：廖憲得 0xde)</a></li>
+</ul></li>
+<li><a href="#雜誌訊息">雜誌訊息</a><ul>
+<li><a href="#讀者訂閱">讀者訂閱</a></li>
+<li><a href="#投稿須知">投稿須知</a></li>
+<li><a href="#參與編輯">參與編輯</a></li>
+<li><a href="#公益資訊">公益資訊</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="前言"><a href="#前言">前言</a></h1>
+<h2 id="編輯小語"><a href="#編輯小語">編輯小語</a></h2>
+<p>在本期的「程式人雜誌」中，聚焦的主題是「網頁排版語言」。</p>
+<p>雖然網頁的排版並不是「程式」，但在網站技術發達的今天，程式人不懂排版語言恐怕也是不行的！</p>
+<p>CSS 是個標準的網頁排版語言，而 LESS 與 SASS 則是從 CSS 延伸而來，功能較強大的排版語言，至於 Bootstrap 則是由 Twitter 所示出的一組網頁排版框架，Bootstrap 包含一組用 LESS 所撰寫的排版語言，以及 jQuery 所建構的互動機制，可以讓您輕易的做出在電腦和手機上都能美觀呈現的網頁。</p>
+<p>有了 Bootstrap，程式人就不怕做出來的網頁太醜而難登大雅之堂了！</p>
+<p>---- （程式人雜誌編輯 - 陳鍾誠）</p>
+<h2 id="授權聲明"><a href="#授權聲明">授權聲明</a></h2>
+<p>本雜誌許多資料修改自維基百科，採用 創作共用：<a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 授權，若您想要修改本書產生衍生著作時，至少應該遵守下列授權條件：</p>
+<ol style="list-style-type: decimal">
+<li>標示原作者姓名 (包含該文章作者，若有來自維基百科的部份也請一併標示)。</li>
+<li>採用 創作共用：<a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 的方式公開衍生著作。</li>
+</ol>
+<p>另外、當本雜誌中有文章或素材並非採用 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 時，將會在該文章或素材後面標示其授權，此時該文章將以該標示的方式授權釋出，請修改者注意這些授權標示，以避免產生侵權糾紛。</p>
+<p>例如有些文章可能不希望被作為「商業性使用」，此時就可能會採用創作共用：<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/">姓名標示、非商業性、相同方式分享</a> 的授權，此時您就不應當將該文章用於商業用途上。</p>
+<p>最後、懇請勿移除公益捐贈的相關描述，以便讓愛心得以持續散播！</p>
+<h1 id="本期焦點"><a href="#本期焦點">本期焦點</a></h1>
+<h2 id="css-網頁排版語言"><a href="#css-網頁排版語言">CSS 網頁排版語言</a></h2>
+<p>CSS 是用來與 HTML 搭配，專門指定排版呈現格式的簡易語言，在本文中我們將介紹簡易的 CSS 語言與用法。</p>
+<p>舉例而言，假如我們想讓表格的標頭欄以黑底白字的方式顯示，那麼就得靠 CSS 來幫忙了。</p>
+<p>CSS 是 Cascading Style Sheets 的簡稱，中文可翻譯為「串接樣式表」，CSS 主要是用來設定 HTML 的顯示版面，包含「字體、大小、顏色、邊框、背景」等等，一個好的 CSS 可以讓您的網頁變得很美觀，而且不需要大幅修改網頁的內容，只要加入一個 CSS 引用即可。</p>
+<p>當套用不同的 CSS 時，網頁的風格就可以產生完全不同的感覺，這讓你的網頁可以輕易的更換成不同的版型。事實上、當您在 blogspot 或 wordpress 網誌平台套用不同版型的時候，只不過是更換了 CSS 樣版而已。</p>
+<p>在 HTML 當中，CSS 有兩種寫法，一種是內嵌式的寫法，另一種是外連式的寫法。</p>
+<p>為了說明 CSS 的語法，先讓我們回顧一下，一個簡單沒有格式化的 HTML 表格，其寫法如下：</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+<span class="kw">&lt;table&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;</span>欄 1<span class="kw">&lt;/th&gt;&lt;th&gt;</span>欄 2<span class="kw">&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 1<span class="kw">&lt;/th&gt;&lt;td&gt;</span>1,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>1,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 2<span class="kw">&lt;/th&gt;&lt;td&gt;</span>2,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>2,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropboxusercontent.com/u/101584453/web/wp/code/table.htm">https://dl.dropboxusercontent.com/u/101584453/web/wp/code/table.htm</a></p>
+<p>如果我們將上述表格的 th 部分，都加上 <code>style=&quot;background-color:black; color:white;&quot;</code> 這樣的 CSS 語法，那麼我們就會得到一個黑底白字的表格。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+<span class="kw">&lt;table&gt;</span>
+<span class="kw">&lt;tr&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;&lt;/th&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;</span>欄 1<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;</span>欄 2<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;</span>列 1<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;td&gt;</span>1,1<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;td&gt;</span>1,2<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;</span>
+<span class="kw">&lt;th</span><span class="ot"> style=</span><span class="st">&quot;background-color:black; color:white;&quot;</span><span class="kw">&gt;</span>列 2<span class="kw">&lt;/th&gt;</span>
+<span class="kw">&lt;td&gt;</span>2, 1<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;td&gt;</span>2, 2<span class="kw">&lt;/td&gt;</span>
+<span class="kw">&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropboxusercontent.com/u/101584453/web/wp/code/table_css_embed.htm">https://dl.dropboxusercontent.com/u/101584453/web/wp/code/table_css_embed.htm</a></p>
+<p>我們使用 CSS 排版前與排版後的結果可以對照如下：</p>
+<div class="figure">
+<img src="../img/table_css_embed.jpg" alt="表單的顯示結果" /><p class="caption">表單的顯示結果</p>
+</div>
+<p>您可以看到在這種寫法當中，我們幾乎都一直在 th 重複撰寫 <code>style=&quot;background-color:black; color:white;&quot;</code> 這一行文字，總共重複了 5 次，這顯然是很浪費時間的行為。</p>
+<p>如果我們可以改用統一的方式，寫出「對於所有 th 而言，我都要用 background-color:black; color:white; 這樣的方式顯示」那不就簡單多了嗎？</p>
+<p>是的、CSS 確實可以讓您這樣做，讓我們將上述範例修改成統一設定格式的版本，如下所示。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;style&gt;</span>
+th <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="kw">&lt;/style&gt;</span>
+<span class="kw">&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+<span class="kw">&lt;table&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;</span>欄 1<span class="kw">&lt;/th&gt;&lt;th&gt;</span>欄 2<span class="kw">&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 1<span class="kw">&lt;/th&gt;&lt;td&gt;</span>1,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>1,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 2<span class="kw">&lt;/th&gt;&lt;td&gt;</span>2,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>2,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>上述統一將 CSS 寫在 <code>&lt;head&gt;&lt;style&gt;...&lt;/style&gt;&lt;/head&gt;</code> 裏的這種寫法，比起內嵌式的顯然簡短多了，這種寫法正是 CSS 的精華之所在。</p>
+<p>但是、如果我們想要對整個網站的所有檔案，都套用同一種格式的話，那麼在每個 HTML 的頭部都要嵌入一整套 CSS 語法，那就不太方便了，萬一我們想要改變版面格式，不就每個 HTML 檔案都要更改，這顯然還不夠好用。</p>
+<p>要解決這個問題，可以將表頭的 CSS 獨立到一個檔案中，然後再用連結的方式引用，這樣只要修改那個 CSS 檔案，整個網站的風格就跟著改變，所以上述檔案就可以改寫如下。</p>
+<p>檔案：table_css.htm</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> type=</span><span class="st">&quot;text/css&quot;</span><span class="ot"> href=</span><span class="st">&quot;mystyle.css&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+<span class="kw">&lt;table&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;</span>欄 1<span class="kw">&lt;/th&gt;&lt;th&gt;</span>欄 2<span class="kw">&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 1<span class="kw">&lt;/th&gt;&lt;td&gt;</span>1,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>1,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;th&gt;</span>列 2<span class="kw">&lt;/th&gt;&lt;td&gt;</span>2,1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>2,2<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檔案：mystyle.css</p>
+<pre class="sourceCode css"><code class="sourceCode css">th <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">}</span></code></pre>
+<p>透過這種方式，我們就可以為網頁設計統一的風格，也比較容易更換網頁的排版風格了，這就是 CSS 語法的用途了。</p>
+<p>當然、上述的網頁還不夠好看，如果我們將 mystyle.css 修改如下，您就會發現表格變得好看多了。</p>
+<pre class="sourceCode css"><code class="sourceCode css">table <span class="kw">{</span> <span class="kw">border-collapse:</span> <span class="dt">collapse</span><span class="kw">;</span> <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span> <span class="kw">}</span>
+th <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span>
+td <span class="kw">{</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span></code></pre>
+<div class="figure">
+<img src="../img/table_css_ref.jpg" alt="較優美的表單顯示結果" /><p class="caption">較優美的表單顯示結果</p>
+</div>
+<h3 id="路徑-tag-id-與-class"><a href="#路徑-tag-id-與-class">路徑, tag, id 與 class</a></h3>
+<p>即使有了可以統一套用的方式，有時我們還是會感覺到不方便，舉例而言，如果我們想要對某個表格套上 A 格式，然後在對另一個表格套上 B 格式，這時採用上述方法就不太夠用了。</p>
+<p>為了解決這種問題，HTML 發展出了 id 與 class 這兩個屬性，我們可以根據 id 或 class 的名稱分別套用不同的 CSS 樣式。</p>
+<p>舉例而言，以下網頁中有兩個 div 框，我們可以分別為這兩個框套用不同的格式，其中 classA 前面加了點符號，成為「.classA」，代表要比對的是 class 屬性，如果想要比對的是 id 屬性，那麼就可以加上井字符號 # (像是範例中 #topbar 的情況)。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&#39;utf-8&#39;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;style&gt;</span>
+<span class="fl">#topbar</span> <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">gray</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">blue</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="fl">.classA</span> <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="fl">.classB</span> <span class="kw">{</span> <span class="kw">background-color:</span><span class="dt">blue</span><span class="kw">;</span> <span class="kw">color:</span><span class="dt">yellow</span><span class="kw">;</span> <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span> <span class="kw">}</span>
+<span class="kw">&lt;/style&gt;</span>
+<span class="kw">&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+
+<span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;topbar&quot;</span><span class="kw">&gt;</span>頂區塊<span class="kw">&lt;/div&gt;</span>
+
+<span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;classA&quot;</span><span class="kw">&gt;</span>A 區塊<span class="kw">&lt;/div&gt;</span>
+
+<span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;classB&quot;</span><span class="kw">&gt;</span>B 區塊<span class="kw">&lt;/div&gt;</span>
+
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>檢視檔案：<a href="https://dl.dropbox.com/u/101584453/wp/code/div_css.htm">https://dl.dropbox.com/u/101584453/wp/code/div_css.htm</a></p>
+<div class="figure">
+<img src="../img/div_css.jpg" alt="兩種 CSS class 的顯示結果" /><p class="caption">兩種 CSS class 的顯示結果</p>
+</div>
+<p>到目前，我們可以看到有三種 css 的指定方式，也就是「標記 tag、代號 id 與類別 class」，可以用 CSS 來定位。事實上、這些指定方式還可以互相串接，以下是一些範例：</p>
+<pre class="sourceCode css"><code class="sourceCode css"><span class="fl">.classA</span> table <span class="kw">{</span> <span class="er">...</span> <span class="kw">}</span>               // 套用到 class=<span class="st">&quot;classA&quot;</span> 內部的 table 標記
+<span class="fl">#topbar</span> <span class="kw">{</span> <span class="er">....</span><span class="kw">}</span>                     // 套用到 id=<span class="st">&quot;topbar&quot;</span> 的元素上
+<span class="fl">#topbar</span> table <span class="fl">.classA</span> a <span class="kw">{</span> <span class="er">....</span> <span class="kw">}</span>    // 套用到 table 內具有 class=<span class="st">&quot;classA&quot;</span> 類別裏的超<span class="fl">連結</span> a 標記上。</code></pre>
+<p>更棒的是、這些選取方式之間還可以共用，只要利用逗點符號「,」 分隔就可以了，以下是一些範例：</p>
+<pre class="sourceCode css"><code class="sourceCode css"><span class="fl">.classA</span>, <span class="fl">#topbar</span> <span class="kw">{</span> <span class="er">...</span> <span class="kw">}</span>            // 套用到 class=<span class="st">&quot;classA&quot;</span> 或 id=<span class="st">&quot;topbar&quot;</span> 的元素上
+<span class="fl">#topbar</span> a, <span class="fl">.classA</span> a <span class="kw">{</span> <span class="er">....</span><span class="kw">}</span>        // 套用到 id=<span class="st">&quot;topbar&quot;</span> 或 class=<span class="st">&quot;.classA&quot;</span> 裏的 a 元素上</code></pre>
+<h3 id="一個實用的-css-的範例"><a href="#一個實用的-css-的範例">一個實用的 CSS 的範例</a></h3>
+<p>如果您想進一步學習 CSS 的各個屬性與用法，請參考下列網址，我們將不一一說明這些屬性的用法。</p>
+<ul>
+<li><a href="http://www.w3schools.com/css/default.asp">http://www.w3schools.com/css/default.asp</a></li>
+</ul>
+<p>在此、筆者將自己常用的一個 CSS 檔案列出，讀者觀察後可以自行複製修改使用。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css">html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video <span class="kw">{</span>
+  <span class="kw">margin:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">padding:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">border:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">font:</span> <span class="dt">inherit</span><span class="kw">;</span>
+  <span class="kw">vertical-align:</span> <span class="dt">baseline</span><span class="kw">;</span>
+  <span class="kw">line-height:</span><span class="dt">160%</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+h1, h2, h3, h4, h5, h6 <span class="kw">{</span>
+  <span class="kw">color:</span><span class="dt">#333333</span><span class="kw">;</span>
+  <span class="kw">margin:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">font-family:</span> <span class="st">&#39;標楷體&#39;</span>, <span class="st">&#39;Times New Roman&#39;</span><span class="kw">;</span>
+  <span class="kw">font-weight:</span> <span class="dt">bold</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+p <span class="kw">{</span>
+  <span class="kw">margin:</span> <span class="dt">10px</span> <span class="dt">0</span> <span class="dt">15px</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">font-size:</span><span class="dt">100%</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+li <span class="kw">{</span>
+  <span class="kw">font-size:</span><span class="dt">100%</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+footer p <span class="kw">{</span>
+  <span class="kw">color:</span> <span class="dt">#f2f2f2</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+a <span class="kw">{</span>
+  <span class="kw">text-decoration:</span> <span class="dt">none</span><span class="kw">;</span>
+  <span class="kw">color:</span> <span class="dt">#007edf</span><span class="kw">;</span>
+  <span class="kw">text-shadow:</span> <span class="dt">none</span><span class="kw">;</span>
+
+  <span class="kw">transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-webkit-transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-webkit-transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-moz-transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-moz-transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-o-transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-o-transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-ms-transition:</span> color <span class="dt">0.5s</span> ease<span class="kw">;</span>
+  <span class="kw">-ms-transition:</span> text-shadow <span class="dt">0.5s</span> ease<span class="kw">;</span>
+<span class="kw">}</span>
+
+table <span class="kw">{</span>
+  <span class="kw">border-collapse:</span> <span class="dt">collapse</span><span class="kw">;</span>
+  <span class="kw">border-spacing:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span>
+  <span class="kw">margin-bottom:</span> <span class="dt">20px</span><span class="kw">;</span>
+  <span class="kw">text-align:</span> <span class="dt">left</span><span class="kw">;</span>
+  <span class="kw">margin-left:</span><span class="dt">auto</span><span class="kw">;</span> 
+  <span class="kw">margin-right:</span><span class="dt">auto</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+th <span class="kw">{</span>
+    <span class="kw">padding:</span> <span class="dt">10px</span><span class="kw">;</span>
+    <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span>
+    <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+td <span class="kw">{</span>
+  <span class="kw">padding:</span> <span class="dt">10px</span><span class="kw">;</span>
+  <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span>
+<span class="kw">}</span>
+ 
+em <span class="kw">{</span> <span class="kw">font-weight:</span><span class="dt">bold</span><span class="kw">;</span> <span class="kw">}</span>
+
+<span class="fl">#topbar</span> <span class="kw">{</span>
+  <span class="kw">margin:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">padding:</span> <span class="dt">1px</span><span class="kw">;</span>
+  <span class="kw">border:</span> <span class="dt">0</span><span class="kw">;</span>
+  <span class="kw">font:</span> <span class="dt">inherit</span><span class="kw">;</span>
+  <span class="kw">vertical-align:</span> <span class="dt">baseline</span><span class="kw">;</span>
+  <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span>
+  <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span>
+  <span class="kw">color:</span><span class="dt">white</span><span class="kw">;</span>
+  <span class="kw">width:</span><span class="dt">95%</span><span class="kw">;</span>
+  <span class="kw">text-align:</span><span class="dt">right</span><span class="kw">;</span>
+  <span class="kw">font-weight:</span><span class="dt">bold</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+<span class="fl">#content</span> <span class="kw">{</span>
+  <span class="kw">margin:</span><span class="dt">10px</span><span class="kw">;</span>
+  <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+pre <span class="kw">{</span>
+  <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span>
+  <span class="kw">background-color:</span><span class="dt">#dddddd</span><span class="kw">;</span>
+  <span class="kw">color:</span><span class="dt">#333333</span><span class="kw">;</span>
+  <span class="kw">font-size:</span><span class="dt">medium</span><span class="kw">;</span>
+  <span class="kw">width:</span><span class="dt">95%</span><span class="kw">;</span>
+  <span class="kw">padding:</span><span class="dt">10px</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+img <span class="kw">{</span>
+  <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#373737</span><span class="kw">;</span>
+  <span class="kw">margin-left:</span> <span class="dt">auto</span><span class="kw">;</span>
+  <span class="kw">margin-right:</span> <span class="dt">auto</span><span class="kw">;</span>
+  <span class="kw">display:</span> <span class="dt">block</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+<span class="fl">.figure</span> <span class="fl">.caption</span> <span class="kw">{</span>
+  <span class="kw">text-align:</span><span class="dt">center</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+<span class="fl">#footer</span> <span class="kw">{</span>
+  <span class="kw">text-align:</span><span class="dt">center</span><span class="kw">;</span>
+  <span class="kw">font-size:</span><span class="dt">small</span><span class="kw">;</span>
+  <span class="kw">color:</span><span class="dt">#666666</span><span class="kw">;</span>
+  <span class="kw">margin:</span> <span class="dt">10px</span><span class="kw">;</span>
+  <span class="kw">padding:</span> <span class="dt">10px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<h3 id="參考文獻"><a href="#參考文獻">參考文獻</a></h3>
+<ul>
+<li><a href="http://www.w3schools.com/css/default.asp">http://www.w3schools.com/css/default.asp</a></li>
+<li><a href="http://css.maxdesign.com.au/listutorial/">http://css.maxdesign.com.au/listutorial/</a></li>
+</ul>
+<p>【本文由陳鍾誠取材並修改自 <a href="http://zh.wikipedia.org/">維基百科</a>，採用創作共用的 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 授權】</p>
+<h2 id="css-的變種-less-與-sass"><a href="#css-的變種-less-與-sass">CSS 的變種： LESS 與 SASS</a></h2>
+<p>瀏覽器所認識的語言，不外乎是 HTML/CSS/JavaScript 這些 W3C 所規定的官方語言。因此像 LESS 與 SASS 這些語言，當然就屬於「非官方語言」，也就是「變種」。</p>
+<p>LESS 與 SASS 都是 CSS 的變種，語法和 CSS 有點像，但卻又不太一樣。這類變種語言通常提供了更強大的功能，更簡潔的語法，而且最後會被轉換成 CSS 語言之後，才能放到瀏覽器上使用。</p>
+<h3 id="變種-1-less"><a href="#變種-1-less">變種 1 : LESS</a></h3>
+<p>LESS 是由 Alexis Sellier 所設計的工具，原本是用 Ruby 實作，用來將 LESS 語法轉換成 CSS 語言。後來改用 JavaScript 設計後，就能內嵌到瀏覽器中，動態的將 LESS 轉為 CSS 後立刻呈現。</p>
+<p>舉例而言、 LESS 擁有變數的慨念，例如以下範例中的 <code>@color</code> 就是一個變數。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css">@color<span class="dv">:</span> <span class="fl">#4D926F</span>;
+ 
+<span class="fl">#header</span> <span class="kw">{</span>
+  <span class="kw">color:</span> @color<span class="kw">;</span>
+<span class="kw">}</span>
+h2 <span class="kw">{</span>
+  <span class="kw">color:</span> @color<span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>上述 LESS 文件被轉換成 CSS 之後，會變成下列形式。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">#header</span> <span class="kw">{</span>
+  <span class="kw">color:</span> <span class="dt">#4D926F</span><span class="kw">;</span>
+<span class="kw">}</span>
+h2 <span class="kw">{</span>
+  <span class="kw">color:</span> <span class="dt">#4D926F</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>當然、LESS 還支援更強大的語法，例如 Mixin 就是個經典的功能，以下是一個簡單的範例。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">.rounded-corners</span> (@radius<span class="dv">:</span> 5px) <span class="kw">{</span>
+  <span class="kw">border-radius:</span> @radius<span class="kw">;</span>
+  <span class="kw">-webkit-border-radius:</span> @radius<span class="kw">;</span>
+  <span class="kw">-moz-border-radius:</span> @radius<span class="kw">;</span>
+<span class="kw">}</span>
+ 
+<span class="fl">#header</span> <span class="kw">{</span>
+  <span class="er">.rounded-corners;</span>
+<span class="kw">}</span>
+<span class="fl">#footer</span> <span class="kw">{</span>
+  <span class="er">.rounded-corners(10px);</span>
+<span class="kw">}</span></code></pre>
+<p>上述文件被轉換成 CSS 之後會變成下列形式。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">#header</span> <span class="kw">{</span>
+  <span class="kw">border-radius:</span> <span class="dt">5px</span><span class="kw">;</span>
+  <span class="kw">-webkit-border-radius:</span> <span class="dt">5px</span><span class="kw">;</span>
+  <span class="kw">-moz-border-radius:</span> <span class="dt">5px</span><span class="kw">;</span>
+<span class="kw">}</span>
+<span class="fl">#footer</span> <span class="kw">{</span>
+  <span class="kw">border-radius:</span> <span class="dt">10px</span><span class="kw">;</span>
+  <span class="kw">-webkit-border-radius:</span> <span class="dt">10px</span><span class="kw">;</span>
+  <span class="kw">-moz-border-radius:</span> <span class="dt">10px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>LESS 可以提供層次結構的套嵌語法，以下是一個範例。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">#header</span> <span class="kw">{</span>
+  <span class="er">h1</span> <span class="er">{</span>
+    <span class="kw">font-size:</span> <span class="dt">26px</span><span class="kw">;</span>
+    <span class="kw">font-weight:</span> <span class="dt">bold</span><span class="kw">;</span>
+  <span class="kw">}</span>
+  p <span class="kw">{</span> <span class="kw">font-size:</span> <span class="dt">12px</span><span class="kw">;</span>
+    <span class="er">a</span> <span class="er">{</span> <span class="kw">text-decoration:</span> <span class="dt">none</span><span class="kw">;</span>
+      <span class="er">&amp;:hover</span> <span class="er">{</span> <span class="kw">border-width:</span> <span class="dt">1px</span> <span class="kw">}</span>
+    }
+  }
+}</code></pre>
+<p>上述範例被轉換成 CSS 之後如下所示。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">#header</span> h1 <span class="kw">{</span>
+  <span class="kw">font-size:</span> <span class="dt">26px</span><span class="kw">;</span>
+  <span class="kw">font-weight:</span> <span class="dt">bold</span><span class="kw">;</span>
+<span class="kw">}</span>
+<span class="fl">#header</span> p <span class="kw">{</span>
+  <span class="kw">font-size:</span> <span class="dt">12px</span><span class="kw">;</span>
+<span class="kw">}</span>
+<span class="fl">#header</span> p a <span class="kw">{</span>
+  <span class="kw">text-decoration:</span> <span class="dt">none</span><span class="kw">;</span>
+<span class="kw">}</span>
+<span class="fl">#header</span> p a<span class="dv">:hover</span> <span class="kw">{</span>
+  <span class="kw">border-width:</span> <span class="dt">1px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>另外、 LESS 還提供了「運算式與函數呼叫」等功能，請看以下範例。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css">@the-border<span class="dv">:</span> 1px;
+@base-color<span class="dv">:</span> <span class="fl">#111</span>;
+@red<span class="dv">:</span>        <span class="fl">#842210</span>;
+ 
+<span class="fl">#header</span> <span class="kw">{</span>
+  <span class="kw">color:</span> @base-color * <span class="dt">3</span><span class="kw">;</span>
+  <span class="kw">border-left:</span> @the-border<span class="kw">;</span>
+  <span class="kw">border-right:</span> @the-border * <span class="dt">2</span><span class="kw">;</span>
+<span class="kw">}</span>
+<span class="fl">#footer</span> <span class="kw">{</span> 
+  <span class="kw">color:</span> @base-color + <span class="dt">#003300</span><span class="kw">;</span>
+  <span class="kw">border-color:</span> desaturate(@red, <span class="dt">10%</span>)<span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>上述範例轉換成 CSS 之後，應該會像下面文件這樣。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">#header</span> <span class="kw">{</span>
+  <span class="kw">color:</span> <span class="dt">#333</span><span class="kw">;</span>
+  <span class="kw">border-left:</span> <span class="dt">1px</span><span class="kw">;</span>
+  <span class="kw">border-right:</span> <span class="dt">2px</span><span class="kw">;</span>
+<span class="kw">}</span>
+<span class="fl">#footer</span> <span class="kw">{</span> 
+  <span class="kw">color:</span> <span class="dt">#114411</span><span class="kw">;</span>
+  <span class="kw">border-color:</span> <span class="dt">#7d2717</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<h3 id="變種-2-sass"><a href="#變種-2-sass">變種 2 : SASS</a></h3>
+<p>SASS (Syntactically Awesome Stylesheets) 是由 Hampton Catlin 設計，然後由 Natalie Weizenbaum 實作的一種樣式語言。</p>
+<p>如果您瞭解 JavaScript 與 Python 的差別，或許就能輕易理解 LESS 與 SASS 的差別了。</p>
+<p>LESS 與 JavaScript 一樣，有用 {...} 的大括號框起來，而 SASS 則像 Python 一樣，沒有用大括號，而是透過換行與縮排來表現這種層次結構。</p>
+<p>事實上，SASS 還有一個變種，就是加上大括號的版本，稱為 SCSS，這兩種風格可以互相轉換，您可以依照習慣挑選使用。</p>
+<p>舉例而言，以下是一個 SASS 與 SCSS 的對照範例。</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;table&gt;&lt;tr&gt;&lt;th&gt;</span>SASS<span class="kw">&lt;/th&gt;&lt;th&gt;</span>SCSS<span class="kw">&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;tr&gt;&lt;td&gt;</span>
+$blue: #3bbfce
+$margin: 16px
+ 
+.content-navigation
+  border-color: $blue
+  color: darken($blue, 9%)
+ 
+.border
+  padding: $margin/2
+  margin:  $margin/2
+  border-color: $blue
+<span class="kw">&lt;/td&gt;&lt;td&gt;</span>
+$blue: #3bbfce;
+$margin: 16px;
+ 
+.content-navigation {
+  border-color: $blue;
+  color: darken($blue, 20%);
+}
+ 
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}
+<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="kw">&lt;/table&gt;</span></code></pre>
+<p>SASS 與 LESS 都提供了「變數、mixin、函數」等功能，但是 SASS 還提供了「繼承」的功能，以下是一個範例。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">.error</span>
+  border<span class="dv">:</span> 1px <span class="fl">#f00</span>;
+  background<span class="dv">:</span> <span class="fl">#fdd</span>;
+
+<span class="fl">.error.intrusion</span>
+  font-size<span class="dv">:</span> 1<span class="fl">.3em</span>;
+  font-weight<span class="dv">:</span> bold;
+
+<span class="fl">.badError</span>
+  @extend <span class="fl">.error</span>;
+  border-width<span class="dv">:</span> 3px;</code></pre>
+<p>上述範例轉換成 CSS 之後，將會產生下列文件。</p>
+<pre class="sourceCode CSS"><code class="sourceCode css"><span class="fl">.error</span>, <span class="fl">.badError</span> <span class="kw">{</span>
+  <span class="kw">border:</span> <span class="dt">1px</span> <span class="dt">#f00</span><span class="kw">;</span>
+  <span class="kw">background:</span> <span class="dt">#fdd</span><span class="kw">;</span>
+<span class="kw">}</span>
+ 
+<span class="fl">.error.intrusion</span>,
+<span class="fl">.badError.intrusion</span> <span class="kw">{</span>
+  <span class="kw">font-size:</span> <span class="dt">1.3em</span><span class="kw">;</span>
+  <span class="kw">font-weight:</span> <span class="dt">bold</span><span class="kw">;</span>
+<span class="kw">}</span>
+ 
+<span class="fl">.badError</span> <span class="kw">{</span>
+  <span class="kw">border-width:</span> <span class="dt">3px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>除此之外，SASS 還提供了多重繼承的功能。</p>
+<p>由於 SASS 主要是用 Ruby 實作的，因此不像 LESS 一樣有提供立即在瀏覽器內用 JavaScript 轉換成 CSS 的功能，不過開放原始碼的領域無奇不有，或許也有人用 JavaScript 實作出 SASS 轉 CSS 的功能也說不定。</p>
+<h3 id="參考文獻-1"><a href="#參考文獻-1">參考文獻</a></h3>
+<ul>
+<li><a href="https://ruby-china.org/topics/4370">聊聊主流框架，Less/Sass/Compass/Bootstrap/H5bp</a></li>
+<li><a href="http://www.oschina.net/question/12_44255">为您详细比较三个 CSS 预处理器（框架）：Sass、LESS 和 Stylus</a></li>
+<li><a href="http://lesscss.org/">http://lesscss.org/</a></li>
+<li><a href="http://sass-lang.com/">http://sass-lang.com/</a></li>
+<li>Wikipedia:<a href="http://zh.wikipedia.org/wiki/LESS_(%E5%B1%82%E5%8F%A0%E6%A0%B7%E5%BC%8F%E8%A1%A8)">LESS層疊樣式表</a></li>
+<li><a href="http://sass-lang.com/guide">http://sass-lang.com/guide</a></li>
+</ul>
+<p>【本文由陳鍾誠取材並修改自 <a href="http://zh.wikipedia.org/">維基百科</a>，採用創作共用的 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 授權】</p>
+<h2 id="bootstrap-網頁排版框架"><a href="#bootstrap-網頁排版框架">Bootstrap 網頁排版框架</a></h2>
+<p>Bootstrap 是由 Twitter 釋出的「高彈性」網頁呈現框架，其程式碼主要是用 LESS 和 jQuery 所架構出來的，LESS 負責網頁排版的部份，而 jQuery 則負責動態的程式部份。</p>
+<p>以下是一個使用 bootstrap 的最簡單網頁框架，</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;zh-tw&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;utf-8&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> http-equiv=</span><span class="st">&quot;X-UA-Compatible&quot;</span><span class="ot"> content=</span><span class="st">&quot;IE=edge&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;viewport&quot;</span><span class="ot"> content=</span><span class="st">&quot;width=device-width, initial-scale=1&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;title&gt;</span>Bootstrap 簡單範例！<span class="kw">&lt;/title&gt;</span>
+
+    <span class="co">&lt;!-- Bootstrap --&gt;</span>
+    <span class="kw">&lt;link</span><span class="ot"> href=</span><span class="st">&quot;css/bootstrap.min.css&quot;</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="kw">&gt;</span>
+
+    <span class="co">&lt;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;</span>
+    <span class="co">&lt;!-- WARNING: Respond.js doesn&#39;t work if you view the page via file:// --&gt;</span>
+    <span class="co">&lt;!--[if lt IE 9]&gt;</span>
+<span class="co">      &lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&quot;&gt;&lt;/script&gt;</span>
+<span class="co">      &lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</span>
+<span class="co">    &lt;![endif]--&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+  <span class="kw">&lt;body&gt;</span>
+    <span class="kw">&lt;h1&gt;</span>Hello ! 您好！<span class="kw">&lt;/h1&gt;</span>
+
+    <span class="co">&lt;!-- jQuery (necessary for Bootstrap&#39;s JavaScript plugins) --&gt;</span>
+    <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+    <span class="co">&lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;</span>
+    <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;js/bootstrap.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+  <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>在上面 bootstrap 的 HTML 檔案中，您可以注意到 CSS 被放在前面，但是 javascript 被放在最後，這是為了讓網頁顯示速度能夠最快所採用的布局，因為 javascript 若先被載入的話，就會立刻被執行，反而容易讓瀏覽器多花時間在 javascript 的載入與執行上，浪費了 CPU 與網路時間。</p>
+<pre class="sourceCode html"><code class="sourceCode html">...
+    <span class="kw">&lt;link</span><span class="ot"> href=</span><span class="st">&quot;css/bootstrap.min.css&quot;</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+    ...
+    <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;js/bootstrap.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+  <span class="kw">&lt;/body&gt;</span>
+...  </code></pre>
+<p>那麼、Bootstrap 到底能做甚麼呢？讓我們看看以下的呈現範例。</p>
+<p>範例來源： <a href="http://getbootstrap.com/examples/theme/">http://getbootstrap.com/examples/theme/</a></p>
+<div class="figure">
+<img src="../img/bootstrap1.jpg" />
+</div>
+<p>您可以看到 bootstrap 可以輕易的做出美麗有質感的「標頭列、功能表、按鈕、表格」等等功能，這簡直就是那些「對美工有障礙的程式人」所夢寐以求的神器啊！</p>
+<p>更棒的是，如果您將上述網頁變窄一點，小一點的話，整個畫面就會變成下列樣子，您可以看到功能表和表格都還是「自動」排得很好，並沒有因為畫面變窄而亂掉，這種特性在「手機」上特別有用，因此 bootstrap 還是讓你能夠開發出「跨平台」網頁的利器喔！</p>
+<div class="figure">
+<img src="../img/bootstrap_mobile.jpg" />
+</div>
+<p>以下是上述範例的「標頭列與功能表」部分的程式碼，您可以看到要寫 bootstrap 網頁通常只要用 div 元素加上 bootstrap 專有的 class 屬性就可以搞定一切了。</p>
+<pre class="sourceCode html"><code class="sourceCode html">...
+    <span class="co">&lt;!-- Fixed navbar --&gt;</span>
+    <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;navbar navbar-inverse navbar-fixed-top&quot;</span><span class="ot"> role=</span><span class="st">&quot;navigation&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;navbar-header&quot;</span><span class="kw">&gt;</span>
+          <span class="kw">&lt;button</span><span class="ot"> type=</span><span class="st">&quot;button&quot;</span><span class="ot"> class=</span><span class="st">&quot;navbar-toggle&quot;</span><span class="ot"> data-toggle=</span><span class="st">&quot;collapse&quot;</span><span class="ot"> data-target=</span><span class="st">&quot;.navbar-collapse&quot;</span><span class="kw">&gt;</span>
+            <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;sr-only&quot;</span><span class="kw">&gt;</span>Toggle navigation<span class="kw">&lt;/span&gt;</span>
+            <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;icon-bar&quot;</span><span class="kw">&gt;&lt;/span&gt;</span>
+            <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;icon-bar&quot;</span><span class="kw">&gt;&lt;/span&gt;</span>
+            <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;icon-bar&quot;</span><span class="kw">&gt;&lt;/span&gt;</span>
+          <span class="kw">&lt;/button&gt;</span>
+          <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;navbar-brand&quot;</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Bootstrap theme<span class="kw">&lt;/a&gt;</span>
+        <span class="kw">&lt;/div&gt;</span>
+        <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;navbar-collapse collapse&quot;</span><span class="kw">&gt;</span>
+          <span class="kw">&lt;ul</span><span class="ot"> class=</span><span class="st">&quot;nav navbar-nav&quot;</span><span class="kw">&gt;</span>
+            <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;active&quot;</span><span class="kw">&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Home<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#about&quot;</span><span class="kw">&gt;</span>About<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#contact&quot;</span><span class="kw">&gt;</span>Contact<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;dropdown&quot;</span><span class="kw">&gt;</span>
+              <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="ot"> class=</span><span class="st">&quot;dropdown-toggle&quot;</span><span class="ot"> data-toggle=</span><span class="st">&quot;dropdown&quot;</span><span class="kw">&gt;</span>Dropdown <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;caret&quot;</span><span class="kw">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+              <span class="kw">&lt;ul</span><span class="ot"> class=</span><span class="st">&quot;dropdown-menu&quot;</span><span class="ot"> role=</span><span class="st">&quot;menu&quot;</span><span class="kw">&gt;</span>
+                <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Action<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Another action<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Something else here<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;divider&quot;</span><span class="kw">&gt;&lt;/li&gt;</span>
+                <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;dropdown-header&quot;</span><span class="kw">&gt;</span>Nav header<span class="kw">&lt;/li&gt;</span>
+                <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Separated link<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>One more separated link<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+              <span class="kw">&lt;/ul&gt;</span>
+            <span class="kw">&lt;/li&gt;</span>
+          <span class="kw">&lt;/ul&gt;</span>
+        <span class="kw">&lt;/div&gt;</span><span class="co">&lt;!--/.nav-collapse --&gt;</span>
+      <span class="kw">&lt;/div&gt;</span>
+    <span class="kw">&lt;/div&gt;</span>
+... </code></pre>
+<p>而下列的碼則是第一個表格的描述，由於 bootstrap 的設計理念是將版面寬度設定為 12 欄，因此 col-md-6 代表佔了六欄，因此在寬版的畫面中，會呈現出兩個表格並列呈現的狀況，但是在窄版的畫面中，就只會呈現出一個表格。</p>
+<pre class="sourceCode html"><code class="sourceCode html">      <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;col-md-6&quot;</span><span class="kw">&gt;</span>
+          <span class="kw">&lt;table</span><span class="ot"> class=</span><span class="st">&quot;table&quot;</span><span class="kw">&gt;</span>
+            <span class="kw">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;</span>#<span class="kw">&lt;/th&gt;&lt;th&gt;</span>First Name<span class="kw">&lt;/th&gt;&lt;th&gt;</span>Last Name<span class="kw">&lt;/th&gt;&lt;th&gt;</span>Username<span class="kw">&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</span>
+            <span class="kw">&lt;tbody&gt;</span>
+              <span class="kw">&lt;tr&gt;&lt;td&gt;</span>1<span class="kw">&lt;/td&gt;&lt;td&gt;</span>Mark<span class="kw">&lt;/td&gt;&lt;td&gt;</span>Otto<span class="kw">&lt;/td&gt;&lt;td&gt;</span>@mdo<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+              <span class="kw">&lt;tr&gt;&lt;td&gt;</span>2<span class="kw">&lt;/td&gt;&lt;td&gt;</span>Jacob<span class="kw">&lt;/td&gt;&lt;td&gt;</span>Thornton<span class="kw">&lt;/td&gt;&lt;td&gt;</span>@fat<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+              <span class="kw">&lt;tr&gt;&lt;td&gt;</span>3<span class="kw">&lt;/td&gt;&lt;td&gt;</span>Larry<span class="kw">&lt;/td&gt;&lt;td&gt;</span>the Bird<span class="kw">&lt;/td&gt;&lt;td&gt;</span>@twitter<span class="kw">&lt;/td&gt;&lt;/tr&gt;</span>
+            <span class="kw">&lt;/tbody&gt;</span>
+          <span class="kw">&lt;/table&gt;</span>
+        <span class="kw">&lt;/div&gt;</span></code></pre>
+<p>當然、以上描述並不能完整的呈現 bootstrap 的功能，只是一個簡單的入門範例而已。Bootstrap 雖然以排版呈現為主，但是由於搭配了 jQuery，因此也有一些進階的函數可以使用。</p>
+<p>另外、還有以下這些常見的控制項，像是 Nav, Navbar, Badge, Dropdown Menu, Progress Bar, Panel 等等，這些控制項的美工都設計得很好，可以「程式人」輕鬆的設計出美觀個網頁。</p>
+<div class="figure">
+<img src="../img/bootstrap_controls.jpg" />
+</div>
+<p>而且 bootstrap 在提供多欄排版上也很方便，例如下圖就是一個採用三欄排版的範例。</p>
+<div class="figure">
+<img src="../img/bootstrap_3column.jpg" />
+</div>
+<p>不過看到上述功能，我就已經受益良多了，因為我就是那種對美工毫無概念，又不想去處理「手機排版」的懶惰程式人，有了 bootstrap 之後，我想我也可以輕鬆的設計出看起來很漂亮的網站了。</p>
+<h3 id="參考文獻-2"><a href="#參考文獻-2">參考文獻</a></h3>
+<ul>
+<li><a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+<li><a href="https://www.mokoversity.com/course/html5/bootstrap-html5-intro">Mokoversity:Bootstrap 3 &amp; HTML5 入門 (教學影片)</a></li>
+<li><a href="http://note.robinks.net/2013/10/using-bootstrap-to-build-prototype-web.html">Robin Notes: 使用 Bootstrap 建置雛型網站</a></li>
+<li><a href="http://www.minwt.com/html/8686.html">網設必備－《Bootstrap》視覺、程式都能快速上手的網頁模組</a></li>
+<li><a href="http://blog.rx836.tw/blog/twitter-bootstrap/">做網站非學不可的Twitter Bootstrap</a></li>
+<li><a href="http://blog.darkthread.net/post-2013-06-12-bootsrap-and-kendo-ui.aspx">黑暗執行緒:Bootstrap!</a></li>
+<li><a href="http://kkbruce.tw/">Bootstrap V2中文教學 - KKBruce</a></li>
+<li><a href="http://v3.bootcss.com/">Bootstrap 中文文档</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)">Wikipedia:Bootstrap (front-end framework)</a></li>
+</ul>
+<p>【本文由陳鍾誠取材並修改自 <a href="http://zh.wikipedia.org/">維基百科</a>，採用創作共用的 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 授權】</p>
+<h1 id="程式人文集"><a href="#程式人文集">程式人文集</a></h1>
+<h2 id="從-arduino-到-avr-晶片4----blink-with-timer-作者cooper-maa"><a href="#從-arduino-到-avr-晶片4----blink-with-timer-作者cooper-maa">從 Arduino 到 AVR 晶片(4) -- Blink with Timer (作者：Cooper Maa)</a></h2>
+<h3 id="實驗目的"><a href="#實驗目的">實驗目的</a></h3>
+<p>使用 Timer 計算時間，讓一顆燈號閃爍，每隔一秒切換一次燈號。</p>
+<h3 id="材料"><a href="#材料">材料</a></h3>
+<ul>
+<li>Arduino 主板 x 1</li>
+<li>LED x 1</li>
+</ul>
+<h3 id="接線"><a href="#接線">接線</a></h3>
+<p>把 LED 接到 Arduino 板子上，LED 長腳 (陽極) 接到 pin13，短腳 (陰極) 接到 GND，如下圖：</p>
+<div class="figure">
+<img src="../img/ArduinoBlink1.png" />
+</div>
+<h3 id="程式碼"><a href="#程式碼">程式碼</a></h3>
+<p>先來看 Arduino 版本的 Blink 程式:</p>
+<pre class="sourceCode CPP"><code class="sourceCode cpp">
+<span class="co">/*</span>
+<span class="co"> * Blink.pde: 讓一顆燈號閃爍&amp;#65292;每隔一秒切換一次燈號</span>
+<span class="co"> */</span>
+
+<span class="dt">const</span> <span class="dt">int</span> ledPin =  <span class="dv">13</span>;         <span class="co">// LED pin</span>
+
+<span class="dt">void</span> setup() {                
+  pinMode(ledPin, OUTPUT);      <span class="co">// 把 ledPin 設置成 output pin </span>
+}
+
+<span class="dt">void</span> loop() {
+  digitalWrite(ledPin, HIGH);   <span class="co">// 打開 LED 燈號 </span>
+  delay(<span class="dv">1000</span>);                  <span class="co">// 延遲一秒鐘</span>
+  digitalWrite(ledPin, LOW);    <span class="co">// 關閉 LED 燈號 </span>
+  delay(<span class="dv">1000</span>);                  <span class="co">// 延遲一秒鐘</span>
+}</code></pre>
+<p>這支程式是 Arduino 的入門程式，相信你應該很熟悉。</p>
+<p>接下來我們改用 Timer 改寫程式，利用 Timer1 計算一秒鐘的時間:</p>
+<pre class="sourceCode CPP"><code class="sourceCode cpp">
+<span class="co">/*</span>
+<span class="co"> * BlinkWithTimer1.pde: 讓一顆燈號閃爍&amp;#65292;每隔一秒切換一次燈號&amp;#65292;使用 Timer 算時間</span>
+<span class="co"> */</span>
+ 
+<span class="dt">const</span> <span class="dt">int</span> ledPin =  <span class="dv">13</span>;         <span class="co">// LED pin</span>
+
+<span class="dt">void</span> setup() {
+  pinMode(ledPin, OUTPUT);      <span class="co">// 把 ledPin 設置成 output pin </span>
+  
+  TCCR1A = <span class="bn">0x00</span>;                <span class="co">// Normal mode, just as a Timer</span>
+
+  TCCR1B |= _BV(CS12);          <span class="co">// prescaler = CPU clock/1024</span>
+  TCCR1B &amp;= ~_BV(CS11);       
+  TCCR1B |= _BV(CS10);        
+
+  TCNT1 = <span class="dv">0</span>;
+}
+
+<span class="dt">void</span> loop() {
+  digitalWrite(ledPin, HIGH);   <span class="co">// 打開 LED 燈號 </span>
+  delay1s();                    <span class="co">// 延遲一秒鐘</span>
+  digitalWrite(ledPin, LOW);    <span class="co">// 關閉 LED 燈號 </span>
+  delay1s();                    <span class="co">// 延遲一秒鐘 </span>
+}
+
+<span class="dt">void</span> delay1s()
+{
+  <span class="kw">while</span> (TCNT1 &lt;<span class="dv">15625</span>)         <span class="co">// Ticks for 1 second @16 MHz,prescale=1024</span>
+    ;  <span class="co">// do nothing</span>
+  
+  TCNT1 = <span class="dv">0</span>;
+}</code></pre>
+<p>以 Arduino UNO 或 Duemilanove 為例，它們的時脈頻率是 16 MHz，如果把 Timer1 的 prescaler 設成 CPU clock/1024，那麼 Timer1 的 clock 便是:</p>
+<p>Timer1 的時脈 = 16 MHz/1024 = 15625Hz</p>
+<p>所以 Timer1 從 0 數到 15625 就是一秒鐘的時間。Timer1 是 16-bit 的，最大值可以到 65535。</p>
+<p>把 Prescaler 設成 CPU clock/1024 的方法是:</p>
+<pre class="sourceCode CPP"><code class="sourceCode cpp">TCCR1B |= _BV(CS12);          <span class="co">// prescaler = CPU clock/1024</span>
+TCCR1B &amp;= ~_BV(CS11);       
+TCCR1B |= _BV(CS10);       </code></pre>
+<h3 id="使用中斷"><a href="#使用中斷">使用中斷</a></h3>
+<p>底下的程式是改用 Timer Overflow 中斷的版本:</p>
+<pre class="sourceCode CPP"><code class="sourceCode cpp">
+<span class="co">/*</span>
+<span class="co"> * BlinkWithInterrupt.pde: 讓一顆燈號閃爍&amp;#65292;每隔一秒切換一次燈號&amp;#65292;使用 Timer 算時間</span>
+<span class="co"> */</span>
+ 
+<span class="dt">const</span> <span class="dt">int</span> ledPin =  <span class="dv">13</span>;         <span class="co">// LED pin</span>
+
+<span class="dt">void</span> setup() {
+  pinMode(ledPin, OUTPUT);      <span class="co">// 把 ledPin 設置成 output pin </span>
+  
+  TCCR1A = <span class="bn">0x00</span>;                <span class="co">// Normal mode, just as a Timer</span>
+
+  TCCR1B |= _BV(CS12);          <span class="co">// prescaler = CPU clock/1024</span>
+  TCCR1B &amp;= ~_BV(CS11);       
+  TCCR1B |= _BV(CS10);    
+  
+  TIMSK1 |= _BV(TOIE1);         <span class="co">// enable timer overflow interrupt</span>
+  
+  TCNT1 = -<span class="dv">15625</span>;               <span class="co">// Ticks for 1 second @16 MHz,prescale=1024</span>
+}
+
+<span class="dt">void</span> loop() {
+  <span class="co">// do nothing</span>
+}
+
+ISR (TIMER1_OVF_vect)
+{    
+  PORTB ^= _BV(<span class="dv">5</span>);              <span class="co">// Toggle LED, PB5 = Arduino pin 13</span>
+  TCNT1 = -<span class="dv">15625</span>;               <span class="co">// Ticks for 1 second @16 MHz,prescale=1024</span>
+}</code></pre>
+<p>這次 Prescaler 仍然使用 CPU clock/1024，所以，要算一秒鐘，一樣是讓 Timer1 從 0 數到 15625 就可算出。除了啟用 Timer overflow 中斷外，我們還得寫個 ISR:</p>
+<pre class="sourceCode CPP"><code class="sourceCode cpp">ISR (TIMER1_OVF_vect)
+{    
+  PORTB ^= _BV(<span class="dv">5</span>);              <span class="co">// Toggle LED, PB5 = Arduino pin 13</span>
+  TCNT1 = -<span class="dv">15625</span>;               <span class="co">// Ticks for 1 second @16 MHz,prescale=1024</span>
+}</code></pre>
+<p>當發生中斷跑到 ISR 時，代表時間已經經過 1 秒鐘，所以接著就切換燈號，然後再把 -15625 載入到 TCNT1，讓 Timer1 在一秒鐘後再次觸發中斷。</p>
+<p>我們也可以不用 Prescaler，像這樣:</p>
+<pre class="sourceCode CPP"><code class="sourceCode cpp"><span class="co">/*</span>
+<span class="co"> * BlinkWithNoPrescaling.pde: 讓一顆燈號閃爍&amp;#65292;每隔一秒切換一次燈號&amp;#65292;使用 Timer 算時間</span>
+<span class="co"> */</span>
+
+<span class="dt">volatile</span> <span class="dt">unsigned</span> <span class="dt">int</span> count = <span class="dv">0</span>; 
+<span class="dt">const</span> <span class="dt">int</span> ledPin =  <span class="dv">13</span>;         <span class="co">// LED pin</span>
+
+<span class="dt">void</span> setup() {
+  pinMode(ledPin, OUTPUT);      <span class="co">// 把 ledPin 設置成 output pin </span>
+  
+  TCCR1A = <span class="bn">0x00</span>;                <span class="co">// Normal mode, just as a Timer</span>
+
+  TCCR1B &amp;= ~_BV(CS12);         <span class="co">// no prescaling</span>
+  TCCR1B &amp;= ~_BV(CS11);       
+  TCCR1B |= _BV(CS10);     
+  
+  TIMSK1 |= _BV(TOIE1);         <span class="co">// enable timer overflow interrupt</span>
+  
+  TCNT1 = <span class="dv">0</span>;
+}
+
+<span class="dt">void</span> loop() {
+  <span class="co">// do nothing</span>
+}
+
+ISR (TIMER1_OVF_vect)
+{  
+  count++;
+  
+  <span class="kw">if</span> (count == <span class="dv">244</span>) {             <span class="co">// overflow frequency = 16 MHz/65536 = 244Hz</span>
+    PORTB ^= _BV(<span class="dv">5</span>);              <span class="co">// Toggle LED, PB5 = Arduino pin 13</span>
+    count = <span class="dv">0</span>;
+  }  
+}</code></pre>
+<p>不用 Prescaler 的時候，Timer 的 clock 就是 16 MHz:</p>
+<p>Timer1 overflow frequency = 16 MHz/65536 = 244 Hz</p>
+<p>所以只要發生 244 次 Timer overflow 中斷，就代表已經過了 1 秒鐘的時間。</p>
+<h3 id="補充說明"><a href="#補充說明">補充說明</a></h3>
+<p>因為 Timer0 已經被 Arduino 拿去用了，所以這篇教學使用 Timer1 示範。</p>
+<h3 id="延伸閱讀"><a href="#延伸閱讀">延伸閱讀</a></h3>
+<ul>
+<li><a href="http://coopermaa2nd.blogspot.com/2010/12/arduino-lab1-blinking-led.html">Arduino 筆記 – Lab1 Blinking a LED</a></li>
+</ul>
+<p>【本文作者為馬萬圳，原文網址為： <a href="http://coopermaa2nd.blogspot.tw/2011/07/41-blink-with-timer.html">http://coopermaa2nd.blogspot.tw/2011/07/41-blink-with-timer.html</a> ，由陳鍾誠編輯後納入本雜誌】</p>
+<h2 id="verilog-的電路合成研究----以-mux-多工器為例-作者陳鍾誠"><a href="#verilog-的電路合成研究----以-mux-多工器為例-作者陳鍾誠">Verilog 的電路合成研究 -- 以 MUX 多工器為例 (作者：陳鍾誠)</a></h2>
+<p>雖然 Verilog 描述的是硬體，但對於沒有硬體背景的我而言，總是把它當成 C 語言來寫。但是、有時候就是會踢到鐵板，像是我設計的某幾個 CPU 在合成的時候跑超久的，放到 Altera Quartus II 裏合成，跑上半個小時都還出不來。而且有時候用 icarus 模擬都正常，但是放上 FPGA 之後執行結果就錯了。</p>
+<p>對於這個現像，我總是百思不解，直到有人告訴我這可能和 if 有關，因為當 if 的條件沒有列完，或者沒有加上完整的 else 時，就會有 Latch 產生。</p>
+<p>對、就是 Latch，這在「組合電路設計」上是一個很不好的情況。因為「組合電路」不應該會有內部狀態，但是當 if 或 case 語句沒有完整的「被封閉」時，就會留下某些「開放」的情況。這時候「電路合成工具」為了讓電路仍然可以運作，會加入 Latch 來處理這種「開放案例」，結果原本應該沒有狀態的組合電路就變成了「有狀態的循序電路」，這可能會造成很多奇怪的問題產生。</p>
+<p>為了解釋何謂「未封閉的 if 會產生 Latch，我們用 Altera Quartus II 的『Tools/Netlist Viewers/RTL Viewer』合成電路檢視工具來觀察一個多工器 (MUX) 的不同寫法，並試著分析看看「未封閉的 if/case 語句會產生甚麼問題？」</p>
+<h3 id="良好案例-mux_case.v"><a href="#良好案例-mux_case.v">良好案例： mux_case.v</a></h3>
+<p>首先、讓我們看看用 case 語法設計的多工器，程式如下所示：</p>
+<p>檔案： mux_case.v</p>
+<pre class="sourceCode verilog"><code class="sourceCode verilog"><span class="kw">module</span> mux_case(<span class="dt">input</span> i0, i1, i2, i3,  <span class="dt">input</span> [<span class="dv">1</span>:<span class="dv">0</span>] sel, <span class="dt">output</span> <span class="dt">reg</span> o);
+ always@(i0 <span class="dt">or</span> i1 <span class="dt">or</span> i2 <span class="dt">or</span> i3 <span class="dt">or</span> sel) <span class="kw">begin</span>
+  <span class="kw">case</span> (sel)
+    <span class="bn">2&#39;b00</span>   : o = i0;
+    <span class="bn">2&#39;b01</span>   : o = i1;
+    <span class="bn">2&#39;b10</span>   : o = i2;
+    <span class="kw">default</span> : o = i3;
+  <span class="kw">endcase</span>
+ <span class="kw">end</span>
+<span class="kw">endmodule</span></code></pre>
+<p>此時若用 RTL Viewer 去檢視，會看到下列的電路圖。</p>
+<div class="figure">
+<img src="../img/verilog_case.jpg" />
+</div>
+<h3 id="不良案例-mux_case_no_default.v"><a href="#不良案例-mux_case_no_default.v">不良案例： mux_case_no_default.v</a></h3>
+<p>接著、讓我們把 case 裏的 default 拿掉，形成一個有「空洞」的程式，如下所示：</p>
+<pre class="sourceCode verilog"><code class="sourceCode verilog"><span class="kw">module</span> mux_case_no_default(<span class="dt">input</span> i0, i1, i2, i3,  <span class="dt">input</span> [<span class="dv">1</span>:<span class="dv">0</span>] sel, <span class="dt">output</span> <span class="dt">reg</span> o);
+ always@(i0 <span class="dt">or</span> i1 <span class="dt">or</span> i2 <span class="dt">or</span> i3 <span class="dt">or</span> sel) <span class="kw">begin</span>
+  <span class="kw">case</span> (sel)
+    <span class="bn">2&#39;b00</span>   : o = i0;
+    <span class="bn">2&#39;b01</span>   : o = i1;
+    <span class="bn">2&#39;b10</span>   : o = i2;
+<span class="co">//    default : o = i3;</span>
+  <span class="kw">endcase</span>
+ <span class="kw">end</span>
+<span class="kw">endmodule</span></code></pre>
+<p>結果、按下 Start Compilation 的按鈕後，訊息框中就多出了下列的警告訊息。</p>
+<pre><code>...
+Warning (10270): Verilog HDL Case Statement warning at mux_case_no_default.v(3): incomplete case statement has no default case item
+
+Warning (10240): Verilog HDL Always Construct warning at mux_case_no_default.v(2): inferring latch(es) for variable &quot;o&quot;, which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for &quot;o&quot; at mux_case_no_default.v(2)
+
+Warning (13012): Latch mux_case_no_default:mux1|o has unsafe behavior
+
+Warning (13013): Ports D and ENA on the latch are fed by the same signal sel[0]
+...</code></pre>
+<p>此時若用 RTL Viewer 去檢視，會看到下列的電路圖。</p>
+<div class="figure">
+<img src="../img/verilog_case_no_default.jpg" />
+</div>
+<h3 id="良好案例-mux_if1.v"><a href="#良好案例-mux_if1.v">良好案例： mux_if1.v</a></h3>
+<p>檔案：mux_if1.v</p>
+<pre class="sourceCode verilog"><code class="sourceCode verilog"><span class="kw">module</span> mux_if1(<span class="dt">input</span> i0, i1, i2, i3,  <span class="dt">input</span> [<span class="dv">1</span>:<span class="dv">0</span>] sel, <span class="dt">output</span> <span class="dt">reg</span> o);
+ always@(i0 <span class="dt">or</span> i1 <span class="dt">or</span> i2 <span class="dt">or</span> i3 <span class="dt">or</span> sel) <span class="kw">begin</span>
+  <span class="kw">if</span> (sel == <span class="bn">2&#39;b00</span>)
+     o = i0;
+  <span class="kw">else</span> <span class="kw">if</span> (sel == <span class="bn">2&#39;b01</span>)
+     o = i1;
+  <span class="kw">else</span> <span class="kw">if</span> (sel == <span class="bn">2&#39;b10</span>)
+     o = i2;
+  <span class="kw">else</span>
+     o = i3;
+ <span class="kw">end</span>
+<span class="kw">endmodule</span></code></pre>
+<div class="figure">
+<img src="../img/verilog_if1.jpg" />
+</div>
+<h3 id="不良案例-mux_if1_no_default.v"><a href="#不良案例-mux_if1_no_default.v">不良案例： mux_if1_no_default.v</a></h3>
+<p>檔案： mux_if1_no_default.v</p>
+<pre class="sourceCode verilog"><code class="sourceCode verilog"><span class="kw">module</span> mux_if1_no_default(<span class="dt">input</span> i0, i1, i2, i3,  
+                          <span class="dt">input</span> [<span class="dv">1</span>:<span class="dv">0</span>] sel, <span class="dt">output</span> <span class="dt">reg</span> o);
+ always@(i0 <span class="dt">or</span> i1 <span class="dt">or</span> i2 <span class="dt">or</span> i3 <span class="dt">or</span> sel) <span class="kw">begin</span>
+  <span class="kw">if</span> (sel == <span class="bn">2&#39;b00</span>)
+     o = i0;
+  <span class="kw">else</span> <span class="kw">if</span> (sel == <span class="bn">2&#39;b01</span>)
+     o = i1;
+  <span class="kw">else</span> <span class="kw">if</span> (sel == <span class="bn">2&#39;b10</span>)
+     o = i2;
+  <span class="kw">else</span> <span class="kw">if</span> (sel == <span class="bn">2&#39;b11</span>)
+     o = i3;
+ <span class="kw">end</span>
+<span class="kw">endmodule</span></code></pre>
+<p>此時若用 RTL Viewer 去檢視，會看到下列的電路圖。</p>
+<div class="figure">
+<img src="../img/verilog_if1_no_default.jpg" />
+</div>
+<h3 id="示範影片"><a href="#示範影片">示範影片</a></h3>
+<p>筆者用 Altera Quartus II 建立的一個專案，並將上述四個範例放入，一個一個用 Quartus II 分析後並用 RTL Viewer 檢視電路圖，以下是完整的教學錄影，請讀者參考。</p>
+<ul>
+<li><a href="http://youtu.be/8r4Ac4xueb4">YouTube : Verilog 的電路合成研究-以 MUX 多工器為例 (使用 Altera Quartus II / RTL Viewer 檢視)</a></li>
+</ul>
+<h3 id="結語"><a href="#結語">結語</a></h3>
+<p>所以、當您用 Verilog 「寫程式」的時候，請務必對 case 語法加上 default，然後對每個 if 語法都要加上 else ，這樣才能形成「封閉性良好」的程式。</p>
+<p>當 Verilog 程式的「封閉性良好」時，合成工具才不會產生 Latch 去試圖彌補開放性的情況，也才不會讓你的組合電路變成「狀態電路」，造成電路的浪費。</p>
+<p>更重要的是，這樣的 Verilog 程式才比較不容易出現「執行時期錯誤」或者「合成電路非常緩慢」的情況。</p>
+<p>這是我個人慘痛經驗所換取的教訓，希望讀者不會重蹈覆轍啊！</p>
+<h3 id="參考文獻-3"><a href="#參考文獻-3">參考文獻</a></h3>
+<ul>
+<li><a href="http://www.cnblogs.com/oomusou/archive/2010/09/05/verilog_mux2.html">真 OO无双 - 博客园: (原創) 多工器MUX coding style整理 (SOC) (Verilog) (Quartus II)</a></li>
+<li><a href="http://electronics.stackexchange.com/questions/38645/why-are-inferred-latches-bad">Stack Exchange : Why are inferred latches bad?</a></li>
+</ul>
+<p>【本文由陳鍾誠取材並修改自 <a href="http://zh.wikipedia.org/">維基百科</a>，採用創作共用的 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/">姓名標示、相同方式分享</a> 授權】</p>
+<h2 id="random-variable-of-normal-distribution-作者bridan"><a href="#random-variable-of-normal-distribution-作者bridan">Random variable of normal distribution (作者：Bridan)</a></h2>
+<p>發表 <a href="http://4rdp.blogspot.com/2008/06/blog-post_14.html">亂數產生器</a> 一文後，吸引不少讀者參考，近日發現網友 <a href="http://blog.pixnet.net/PeiLingLiu/post/16013748">PeiLingLiu 的部落格</a> ，分析她的筆記， <a href="http://en.wikipedia.org/wiki/Box-Muller_transform">Box-Muller transform</a> 這方法也不錯。簡單的說， <em>將兩獨立均勻分佈變數，經變換計算與極座標轉換可產出常態分佈變數</em> 。於 <a href="http://zh.wikipedia.org/w/index.php?title=%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F&amp;variant=zh-tw">嵌入式系統</a> ，除非 MCU (Micro Control Unit) 的速度夠快，不然 <a href="http://zh.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86&amp;variant=zh-tw">中央極限定理</a> 的方法， <em>計算時間較短</em> 。亂數分佈情形，請參考 <a href="http://4rdp.googlegroups.com/web/Random2.xls?hl=zh-TW&amp;gda=WlxnhT8AAAD2KwrkKIeO6bMyd5uLjj5txtGxgudbQk3qV1mzw7u0vRcwy3dI2CgZTioxnYaX_ECcpGes9sfYrOvkdmCVag2c">EXCEL 檔</a> 內容。</p>
+<div class="figure">
+<img src="../img/normalExp1.jpg" />
+</div>
+<div class="figure">
+<img src="../img/normalExp2.jpg" />
+</div>
+<div class="figure">
+<img src="../img/normalExp3.jpg" />
+</div>
+<div class="figure">
+<img src="../img/normalExp4.jpg" />
+</div>
+<p>(本文來自「研發養成所」 Bridan 的網誌，原文網址為 <a href="http://4rdp.blogspot.tw/2008/06/random-variable-of-normal-distribution.html">http://4rdp.blogspot.tw/2008/06/random-variable-of-normal-distribution.html</a> ，由陳鍾誠編輯後刊登於程式人雜誌)</p>
+<h2 id="visual-basic-6.0-奇數魔術方塊odd-magic-square-詳細解法-作者廖憲得-0xde"><a href="#visual-basic-6.0-奇數魔術方塊odd-magic-square-詳細解法-作者廖憲得-0xde">Visual Basic 6.0: 奇數魔術方塊(Odd Magic Square) 詳細解法 (作者：廖憲得 0xde)</a></h2>
+<p>什麼是奇數魔術方陣 (?)</p>
+<blockquote>
+<p>魔術方塊是許多人想要解決的一個古老的數學問題，您可能在一些雜誌上看過，也可能您的老師有介紹過。一個魔術方塊是在於安排數字在一矩陣 <code>[n*n]</code> 中，從 1 到 n^2, 每一數字僅出現一次,而且，任一列、任一行或任一對角線的總和都相同。求總和的公式要證明為 <code>n*[ ( n^2 + 1) / 2]</code> ，並不是很困難，若我們利用這個公式，對 <code>[5*5]</code> 矩陣而言，其總和為 <code>5*[ ( 5^2 + 1 ) / 2 ] = 65</code> ，其對應的魔術方塊輸出如下：</p>
+</blockquote>
+<div class="figure">
+<img src="../img/VBMagic1.JPG" />
+</div>
+<div class="figure">
+<img src="../img/VBMagic2.JPG" />
+</div>
+<pre class="sourceCode monobasic"><code class="sourceCode monobasic"><span class="co">&#39;# [Visual Basic 6.0] 奇數魔術方塊(Odd Magic Square)</span>
+<span class="co">&#39;# 0xDe</span>
+<span class="kw">Dim</span> InputN
+<span class="kw">Dim</span> Squate()
+<span class="kw">Private</span> <span class="kw">Sub </span>Form_Activate()
+<span class="co">&#39;------------------------------</span>
+InputN = 3 <span class="co">&#39; 輸入 (必須為奇數)</span>
+<span class="co">&#39;------------------------------</span>
+
+
+<span class="co">&#39;------------------------------</span>
+<span class="kw">If </span>InputN Mod 2 = 0 <span class="kw">Then</span> <span class="kw">Exit Sub &#39; 判斷是否為奇數</span>
+<span class="co">&#39;------------------------------</span>
+<span class="kw">ReDim</span> Square(InputN - 1, InputN - 1)
+<span class="co">&#39;------------------------------</span>
+Print <span class="st">&quot;N= &quot;</span> &amp; InputN &amp; <span class="st">&quot;的奇數魔術方陣&quot;</span> &amp; vbCrLf
+Randomize Timer <span class="co">&#39; 亂數產生</span>
+TempX = Int(Rnd * InputN) <span class="co">&#39; 隨機起始 X</span>
+TempY = Int(Rnd * InputN) <span class="co">&#39; 隨機起始 Y</span>
+<span class="co">&#39;------------------------------</span>
+<span class="kw">Do </span>Until N = (InputN ^ 2) <span class="co">&#39; 直到放滿</span>
+    <span class="kw">If </span>Square(TempX, TempY) = <span class="st">&quot;&quot;</span> <span class="kw">Then</span>
+        N = N + 1
+        Square(TempX, TempY) = N
+        
+        TempX = TempX - 1 <span class="co">&#39; 向上移</span>
+        <span class="kw">If </span>TempX &lt; 0 <span class="kw">Then</span> TempX = InputN - 1
+        TempY = TempY + 1 <span class="co">&#39; 向右移</span>
+        <span class="kw">If </span>TempY &gt; InputN - 1 <span class="kw">Then</span> TempY = 0
+    <span class="kw">Else</span>
+        <span class="co">&#39; 恢復原本的狀態往下</span>
+        TempX = TempX + 1
+        <span class="kw">If </span>TempX &gt; InputN - 1 <span class="kw">Then</span> TempX = 0
+        TempY = TempY - 1
+        <span class="kw">If </span>TempY &lt; 0 <span class="kw">Then</span> TempY = InputN - 1
+        <span class="co">&#39; 往下</span>
+        TempX = TempX + 1
+        <span class="kw">If </span>TempX &gt; InputN - 1 <span class="kw">Then</span> TempX = 0
+    <span class="kw">End If</span>
+<span class="kw">Loop</span>
+<span class="co">&#39;------------------------------</span>
+    <span class="kw">For </span>I = 0 <span class="kw">To</span> InputN - 1 <span class="co">&#39; 將結果輸出</span>
+        <span class="kw">For </span>J = 0 <span class="kw">To</span> InputN - 1
+            Print Square(I, J);
+        <span class="kw">Next </span>J
+            Print
+    <span class="kw">Next </span>I
+<span class="co">&#39;------------------------------</span>
+<span class="kw">End Sub</span></code></pre>
+<ul>
+<li>檔案下載：<a href="http://files.dotblogs.com.tw/0xde/1311/20131113153918434.rar">Visual Basic 6.0:奇數魔術方塊(Odd Magic Square).rar</a></li>
+</ul>
+<p>【本文作者為「廖憲得」，原文網址為： <a href="http://www.dotblogs.com.tw/0xde/archive/2013/11/13/129187.aspx">http://www.dotblogs.com.tw/0xde/archive/2013/11/13/129187.aspx</a> ，由陳鍾誠編輯後納入本雜誌】</p>
+<h1 id="雜誌訊息"><a href="#雜誌訊息">雜誌訊息</a></h1>
+<h2 id="讀者訂閱"><a href="#讀者訂閱">讀者訂閱</a></h2>
+<p>程式人雜誌是一個結合「開放原始碼與公益捐款活動」的雜誌，簡稱「開放公益雜誌」。開放公益雜誌本著「讀書做善事、寫書做公益」的精神，我們非常歡迎程式人認養專欄、或者捐出您的網誌，如果您願意成為本雜誌的專欄作家，請加入 <a href="https://www.facebook.com/groups/programmerMagazine/">程式人雜誌社團</a> 一同共襄盛舉。</p>
+<p>我們透過發行這本雜誌，希望讓大家可以讀到想讀的書，學到想學的技術，同時也讓寫作的朋友的作品能產生良好價值 – 那就是讓讀者根據雜誌的價值捐款給慈善團體。 讀雜誌做公益也不需要有壓力，您不需要每讀一本就急著去捐款，您可以讀了十本再捐，或者使用固定的月捐款方式，當成是雜誌訂閱費，或者是季捐款、一年捐一次等都 OK ! 甚至是單純當個讀者我們也都很歡迎！</p>
+<p>本雜誌每期參考價：NT 50 元，如果您喜歡本雜誌，請將書款捐贈公益團體。例如可捐贈給「羅慧夫顱顏基金會 彰化銀行(009) 帳號：5234-01-41778-800」。(若匯款要加註可用「程式人雜誌」五個字)</p>
+<h2 id="投稿須知"><a href="#投稿須知">投稿須知</a></h2>
+<p><em>給專欄寫作者：</em> 做公益不需要有壓力。如果您願意撰寫專欄，您可以輕鬆的寫，如果當月的稿件出不來，我們會安排其他稿件上場。</p>
+<p><em>給網誌捐贈者：</em> 如果您沒時間寫專欄或投稿，沒關係，只要將您的網誌以 [創作共用的「姓名標示、非商業性、相同方式分享」授權] 並通知我們，我們會自動從中選取需要的文章進行編輯，放入適當的雜誌當中出刊。</p>
+<p><em>給文章投稿者：</em> 程式人雜誌非常歡迎您加入作者的行列，如果您想撰寫任何文章或投稿，請用 markdown 或 LibreOffice 編輯好您的稿件，並於每個月 25 日前投稿到<a href="https://www.facebook.com/groups/programmerMagazine/">程式人雜誌社團</a> 的檔案區，我們會盡可能將稿件編入隔月1號出版程式人雜誌當中，也歡迎您到社團中與我們一同討論。</p>
+<p>如果您要投稿給程式人雜誌，我們最希望的格式是採用 markdown 的格式撰寫，然後將所有檔按壓縮為 zip 上傳到社團檔案區給我們， 如您想學習 markdown 的撰寫出版方式，可以參考 <a href="https://dl.dropboxusercontent.com/u/101584453/pmag/201304/htm/video1.html">看影片學 markdown 編輯出版流程</a> 一文。</p>
+<p>如果您無法採用 markdown 的方式撰寫，也可以直接給我們您的稿件，像是 MS. Word 的 doc 檔或 LibreOffice 的 odt 檔都可以，我們 會將這些稿件改寫為 markdown 之後編入雜誌當中。</p>
+<h2 id="參與編輯"><a href="#參與編輯">參與編輯</a></h2>
+<p>您也可以擔任程式人雜誌的編輯，甚至創造一個全新的公益雜誌，我們誠摯的邀請您加入「開放公益出版」的行列，如果您想擔任編輯或創造新雜誌，也歡迎到 <a href="https://www.facebook.com/groups/programmerMagazine/">程式人雜誌社團</a> 來與我們討論相關事宜。</p>
+<h2 id="公益資訊"><a href="#公益資訊">公益資訊</a></h2>
+<table>
+<col width="22%" />
+<col width="20%" />
+<col width="28%" />
+<col width="28%" />
+<thead>
+<tr class="header">
+<th align="left">公益團體</th>
+<th align="left">聯絡資訊</th>
+<th align="left">服務對象</th>
+<th align="left">捐款帳號</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">財團法人羅慧夫顱顏基金會</td>
+<td align="left"><a href="http://www.nncf.org/">http://www.nncf.org/</a> <BR/> <script type="text/javascript">
+<!--
+h='&#110;&#110;&#x63;&#102;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#108;&#x79;&#110;&#110;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#108;&#x79;&#110;&#110;&#32;&#x61;&#116;&#32;&#110;&#110;&#x63;&#102;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript> <BR/> 02-27190408分機 232</td>
+<td align="left">顱顏患者 (如唇顎裂、小耳症或其他罕見顱顏缺陷）</td>
+<td align="left">銀行：009彰化銀行民生分行<BR/> 帳號：5234-01-41778-800</td>
+</tr>
+<tr class="even">
+<td align="left">社團法人台灣省兒童少年成長協會</td>
+<td align="left"><a href="http://www.cyga.org/">http://www.cyga.org/</a> <BR/> <script type="text/javascript">
+<!--
+h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x63;&#x79;&#x67;&#x61;&#x39;&#x39;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x63;&#x79;&#x67;&#x61;&#x39;&#x39;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript> <BR/> 04-23058005</td>
+<td align="left">單親、隔代教養.弱勢及一般家庭之兒童青少年</td>
+<td align="left">銀行：新光銀行 <BR/> 戶名：台灣省兒童少年成長協會 <BR/> 帳號：103-0912-10-000212-0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="footer">
+<a href="https://www.facebook.com/groups/programmerMagazine/">程式人雜誌</a> ，採用 <a href="http://creativecommons.org/licenses/by-sa/3.0/tw/ ">創作共用：姓名標示、相同方式分享</a> 授權，歡迎加入 <a href="https://www.facebook.com/groups/programmerMagazine/">雜誌社團</a>
+</div>
+</body>
+</html>
